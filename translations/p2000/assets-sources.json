@@ -1,0 +1,56 @@
+[
+  {
+    "source": "https://www.diy-sim.com/images/stories/flexicontent/item_29_field_41/m_p2000_diypedal_1.jpg",
+    "file": "assets/m_p2000_diypedal_1.jpg",
+    "bytes": 81826,
+    "sha256": "a5afac544ade8dd376d3281db74bd3841c5c85b8a649c6e3cca47ea6f16d4065"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_4pin.jpg",
+    "file": "assets/P2000PedalBoxPinout_4pin.jpg",
+    "bytes": 54773,
+    "sha256": "8bd4a67686a714a045bce54b03c350d7b58f357252dcce208c944d28b00c9321"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_5pin.jpg",
+    "file": "assets/P2000PedalBoxPinout_5pin.jpg",
+    "bytes": 60859,
+    "sha256": "e8d58d8253e2e361f1e3f8dde29023c2f1ef30a2458547f88e2d00a301ffc120"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/P2000PedalBoxPinout.jpg",
+    "file": "assets/P2000PedalBoxPinout.jpg",
+    "bytes": 99835,
+    "sha256": "5642de8ea51fdef516d782086dc9b201fd6570e5673c6bfa7f6d62f003b4d279"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/P2000_Pinout2.jpg",
+    "file": "assets/P2000_Pinout2.jpg",
+    "bytes": 87414,
+    "sha256": "ba1c1f0527f75faf0add82c6a9969573ad422296bb12cd377454a827f9611874"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/P2000_Pinout3.jpg",
+    "file": "assets/P2000_Pinout3.jpg",
+    "bytes": 99893,
+    "sha256": "82031c9df4a4049757262b9436a713543cd05113a7eba72297fbcdaf61cb8ee7"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/IMG_0471.jpg",
+    "file": "assets/IMG_0471.jpg",
+    "bytes": 878723,
+    "sha256": "002e38dfd6444d12a5a1cf9b66dc8d79eabd7070b2f34c189e596a56201e17b2"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/IMG_0464.jpg",
+    "file": "assets/IMG_0464.jpg",
+    "bytes": 922807,
+    "sha256": "085d5097e52026a275e6111301f2bab4fd0fe022bc9db566cc570177094a4351"
+  },
+  {
+    "source": "https://www.diy-sim.com/images/articles/how-to/p2000_diy/IMG_0466.jpg",
+    "file": "assets/IMG_0466.jpg",
+    "bytes": 845283,
+    "sha256": "d4c92d11c2262713c7984af662438883ef65bc9103123dd96a8c147f5f5fb151"
+  }
+]

@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" dir="ltr">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://www.diy-sim.com/guides/how-to/item/universal-lc-pedal-controller-simagic-p2000-control-box" />
+	<meta name="keywords" content="sim racing, sim flight, DIY, Sim, VR, racing, drift, rally, Projects, Know How, Tutorials, Guides, 3D Printing, Electronics, Metalworking, Aluminum Extrusion, Profiles, Sim Rig" />
+	<meta name="rights" content="Attribution 4.0 International (CC BY 4.0)" />
+	<meta name="author" content="Super User" />
+	<meta name="description" content="Platform for sharing your DIY Sim/Flight projects, find inspiration  and exchange information. Features 3D printed, software, metalworking and general DIY Projects. Has also cool user gallery to feature your Rig or other Sim Gear." />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>How-tos - Universal LC Pedal Controller - Simagic P2000 Control Box</title>
+	<link href="https://www.diy-sim.com/guides/how-to/item/universal-lc-pedal-controller-simagic-p2000-control-box" rel="canonical" />
+	<link href="https://www.diy-sim.com/component/search/?Itemid=208&amp;cid=18&amp;id=29-universal-lc-pedal-controller-simagic-p2000-control-box&amp;format=opensearch" rel="search" title="Search DIY-SIM" type="application/opensearchdescription+xml" />
+	<link href="/templates/yoo_master/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/components/com_flexicontent/librairies/jquery/css/ui-lightness/jquery-ui-1.9.2.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/assets/css/flexicontent.css?a9b7955754242d1bbcef182ddc51172c" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/assets/css/j3x.css?a9b7955754242d1bbcef182ddc51172c" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/librairies/select2/select2.css?3.5.4" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/assets/css/fcvote.css?a9b7955754242d1bbcef182ddc51172c" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/librairies/bootstrap-toggle/css/bootstrap2-toggle.min.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/librairies/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/templates/DIYGrid_Articles/css/item.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_jcomments/tpl/diy/style.css?v=3002" rel="stylesheet" type="text/css" />
+	<link href="/components/com_flexicontent/assets/css/tabber.css?a9b7955754242d1bbcef182ddc51172c" rel="stylesheet" type="text/css" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/ampz/ampz/css/ampz.min.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jce/css/content.css?badb4208be409b1335b815dde676300e" rel="stylesheet" type="text/css" />
+	<link href="/cache/widgetkit/widgetkit-676038f7.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/yoo_master/styles/diy/css/menu_top.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/templates/yoo_master/styles/diy/css/menu_topmobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/templates/yoo_master/styles/diy/css/menu_mobile.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/uikit/css/uikit.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/uikit/css/uikit.min.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/templates/yoo_master/styles/diy/css/review_rating.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/fontawesome6/css/fontawesome.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/fontawesome6/css/brands.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/fontawesome6/css/custom-icons.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/fontawesome6/css/regular.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/templates/yoo_master/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_zooitem/tmpl/list/jbitem.css?ver=20221021" rel="stylesheet" type="text/css" />
+	<link href="/media/zoo/applications/jbuniversal/elements/gallerypro/assets/css/gallerypro.css?ver=20221021" rel="stylesheet" type="text/css" />
+	<link href="https://www.diy-sim.com/modules/mod_diysocial/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://www.diy-sim.com/cache/jbzoo_assets/library-c449f2348f01c5c3ec5a26b9f7d291e10.css?675" rel="stylesheet" type="text/css" />
+	<link href="https://www.diy-sim.com/cache/jbzoo_assets/default-c449f2348f01c5c3ec5a26b9f7d291e10.css?675" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+			/* This is via voting field parameter, please edit field configuration to override them */
+			.voting-row div.fcvote.fcvote-box-main {
+				line-height:24px!important;
+			}
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list {
+				height:24px!important;
+				width:120px!important;
+			}
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list > li.voting-links a,
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list > li.current-rating {
+				height:24px!important;
+				line-height:24px!important;
+			}
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list,
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list > li.voting-links a:hover,
+			.voting-row div.fcvote.fcvote-box-main > ul.fcvote_list > li.current-rating {
+				background-image:url(/components/com_flexicontent/assets/images/star-medium.png)!important;
+			}
+			
+			/* This is via voting field parameter, please edit field configuration to override them */
+			.voting-row div.fcvote > ul.fcvote_list {
+				height:24px!important;
+				width:120px!important;
+			}
+			.voting-row div.fcvote > ul.fcvote_list > li.voting-links a,
+			.voting-row div.fcvote > ul.fcvote_list > li.current-rating {
+				height:24px!important;
+				line-height:24px!important;
+			}
+			.voting-row div.fcvote > ul.fcvote_list,
+			.voting-row div.fcvote > ul.fcvote_list > li.voting-links a:hover,
+			.voting-row div.fcvote > ul.fcvote_list > li.current-rating {
+				background-image:url(/components/com_flexicontent/assets/images/star-medium.png)!important;
+			}
+			.voting-row div.fcvote ul.fcvote_list > .voting-links a.star1 { width: 20%!important; z-index: 6; }
+.voting-row div.fcvote ul.fcvote_list > .voting-links a.star2 { width: 40%!important; z-index: 5; }
+.voting-row div.fcvote ul.fcvote_list > .voting-links a.star3 { width: 60%!important; z-index: 4; }
+.voting-row div.fcvote ul.fcvote_list > .voting-links a.star4 { width: 80%!important; z-index: 3; }
+.voting-row div.fcvote ul.fcvote_list > .voting-links a.star5 { width: 100%!important; z-index: 2; }
+#load-btns-inline_sc_3{
+			font-family: 'Open Sans', helvetica, arial, sans-serif;
+
+		}
+        #ampz_inline_mobile { background-color: #ffffff }
+        @media (min-width: 600px) {
+            #ampz_inline_mobile {
+                display: none !important;
+            }
+        }
+        @media (max-width: 600px) {
+            #ampz_inline_mobile {
+                display: block !important;
+            }
+        }.mfp-content{
+			font-family: 'Open Sans', helvetica, arial, sans-serif;
+
+		}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"118145bf80bf7bea7b45969bdc864b96","system.paths":{"root":"","base":""},"joomla.jtext":{"FLEXI_FORM_IS_BEING_SUBMITTED":"Form is being submitted ...","FLEXI_LOADING":"loading","FLEXI_NOT_AN_IMAGE_FILE":"FLEXI_NOT_AN_IMAGE_FILE","FLEXI_IMAGE":"Image","FLEXI_LOADING_IMAGES":"FLEXI_LOADING_IMAGES","FLEXI_THUMBNAILS":"FLEXI_THUMBNAILS","FLEXI_NO_ITEMS_SELECTED":"FLEXI_NO_ITEMS_SELECTED","FLEXI_ARE_YOU_SURE":"FLEXI_ARE_YOU_SURE","FLEXI_APPLYING_FILTERING":"Applying Filtering","FLEXI_TYPE_TO_LIST":"... type to list","FLEXI_TYPE_TO_FILTER":" ... type to filter","FLEXI_UPDATING_CONTENTS":"Updating contents ...","FLEXI_YOUR_BROWSER_DOES_NOT_SUPPORT_AJAX":"Your browser does not support Ajax","FLEXI_ADDED_TO_YOUR_FAVOURITES":"Added to your favourites","FLEXI_YOU_NEED_TO_LOGIN":"You need to login to favour this item. It will be added to your personal Favourites list.","FLEXI_REMOVED_FROM_YOUR_FAVOURITES":"Removed from your favourites","FLEXI_USERS":"users","FLEXI_FAVOURE":"Add to favourites","FLEXI_REMOVE_FAVOURITE":"Remove from your favourites","FLEXI_FAVS_YOU_HAVE_SUBSCRIBED":"You have subscribed","FLEXI_FAVS_CLICK_TO_SUBSCRIBE":"Click to subscribe","FLEXI_TOTAL":"Total"}}</script>
+	<script src="/media/system/js/core.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.ui.core.min.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.ui.sortable.min.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/jquery/js/jquery-ui/jquery.ui.dialog.min.js" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/jquery/js/jquery-ui/jquery.ui.menu.min.js" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/jquery/js/jquery-ui/jquery.ui.autocomplete.min.js" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/jquery/js/jquery-ui/jquery.ui.progressbar.min.js" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script>
+	<!--[if lte IE 11]><script src="/media/system/js/polyfill.event.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script><![endif]-->
+	<!--[if lte IE 11]><script src="/media/system/js/polyfill.classlist.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script><![endif]-->
+	<!--[if lte IE 11]><script src="/media/system/js/polyfill.map.js?2f28d040c1b1d3570c41c31c5eb80252" type="text/javascript"></script><![endif]-->
+	<script src="/components/com_flexicontent/assets/js/flexi-lib.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/mousewheel/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/select2/select2.min.js?3.5.4" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/select2/select2.sortable.js?3.5.4" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/assets/js/tmpl-common.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/assets/js/jquery-easing.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/assets/js/fcvote.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/bootstrap-toggle/js/bootstrap2-toggle.min.js" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/assets/js/fcfav.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/librairies/fancybox/dist/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script src="/components/com_jcomments/js/jcomments-v2.3.js?v=12" type="text/javascript"></script>
+	<script src="/components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+	<script src="/components/com_flexicontent/assets/js/tabber-minimized.js?a9b7955754242d1bbcef182ddc51172c" type="text/javascript"></script>
+	<script src="/plugins/system/ampz/ampz/js/ampz.min.js" type="text/javascript"></script>
+	<script src="/cache/widgetkit/widgetkit-89d414db.js" type="text/javascript"></script>
+	<script src="/templates/yoo_master/styles/diy/js/mobile_menu.js" type="text/javascript"></script>
+	<script src="/uikit/js/uikit.js" type="text/javascript"></script>
+	<script src="/uikit/js/uikit.min.js" type="text/javascript"></script>
+	<script src="https://www.diy-sim.com/cache/jbzoo_assets/library-c449f2348f01c5c3ec5a26b9f7d291e10.js?675" type="text/javascript"></script>
+	<script src="https://www.diy-sim.com/cache/jbzoo_assets/default-c449f2348f01c5c3ec5a26b9f7d291e10.js?675" type="text/javascript"></script>
+	<script type="text/javascript">
+
+				var jbase_url_fc = "https:\/\/www.diy-sim.com\/";
+				var jroot_url_fc = "https:\/\/www.diy-sim.com\/";
+				var jclient_path_fc = "";
+			jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+					var fc_sef_lang = 'en';
+					var fc_root_uri = '';
+					var fc_base_uri = '';
+					var FC_URL_VARS = [];
+				
+					jQuery( document ).ready(function() {
+						jQuery("body").prepend('\
+							<div id="fc_filter_form_blocker" style="display: none;">\
+								<div class="fc_blocker_overlay" style="background-color: rgba(0, 0, 0, 0.3);"></div>\
+								<div class="fc_blocker_content" style="background-color: rgba(255, 255, 255, 1); color: rgba(0, 0, 0, 1);">\
+									\
+									<div class="fc_blocker_mssg" style="" >Applying Filtering</div>\
+									<div class="fc_blocker_bar"><div style="background-color: rgba(0, 153, 255, 1);"></div></div>\
+								</div>\
+							</div>\
+						');
+					});
+				
+				if (typeof jQuery.fn.chosen == 'function') {
+					jQuery.fn.chosen_fc = jQuery.fn.chosen;
+					jQuery.fn.chosen = function(){
+						var args = arguments;
+						var result;
+						jQuery(this).each(function() {
+							if (jQuery(this).hasClass('use_select2_lib') || jQuery(this).hasClass('fc_no_js_attach')) return;
+							result = jQuery(this).chosen_fc(args);
+						});
+						return result;
+					};
+				}
+				
+					jQuery(document).ready(function()
+					{
+						window.skip_select2_js = 0;
+						fc_attachSelect2('body');
+					});
+				
+					jQuery(document).ready(function(){
+						jQuery('input.fc_checkboxtoggle').bootstrapToggle();
+					});
+				
+		var fcfav_toggle_style = 2;
+		var fcfav_status_info = 0;
+		var fcfav_toggle_info = 1;
+	
+					jQuery(document).ready(function(){
+						jQuery('.fancybox').fancybox({
+							'openEffect'	: 'elastic',
+							'closeEffect'	: 'elastic',
+							'openEasing'  : 'easeOutCubic',
+							'closeEasing' : 'easeInCubic',
+							'idleTime'    : 0
+						});
+					});
+				
+	(function($)
+	{
+		$(document).ready(function()
+		{
+			$('#fb_gallery_fc_teaser_image_fcitem29 a.fb_gallery').fancybox({
+				loop: false,
+				keyboard: true,
+				infobar: true,
+				toolbar: 'auto',
+				button : ["__SAVED__"],
+				protect: true,
+				animationEffect: 'zoom',
+				animationDuration: 400,
+				transitionEffect: 'fade',
+				transitionDuration: 400,
+				slideShow: {autoStart: false,speed: 3000}
+			});
+		});
+	})(jQuery);
+	 document.write('<style type="text/css">.fctabber{display:none;}<\/style>'); 
+		var fc_validateOnSubmitForm = 1;
+	var ampzSettings = {"ampzCounts":{"twitter":"0","total":"1","whatsapp":"0","copy":"1","reddit":"0","love":"0","facebook":"0"},"ampzNetworks":["facebook","twitter","whatsapp","reddit","copy","love"],"ampzEntranceDelay":"0.5s","ampzEntranceDelayMobile":"0.5s","ampzMobileOnlyButtons":"","ampzMobileWidth":"600","ampzFlyinEntranceEffect":"ampz_flyin_right bounceInUp","ampzThresholdTotalShares":"0","ampzBaseUrl":"https:\/\/www.diy-sim.com\/","ampzShareUrl":"https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box","ampzOpenInNewTab":"","ampzFbAT":"0","ampzCacheLifetime":"3600","ampzCachedCounts":"1","ampzFlyInTriggerBottom":"","ampzFlyInTriggerTime":"","ampzFlyInTriggerTimeSeconds":"10000","ampzActiveComponent":"com_flexicontent","ampzFlyInDisplayMobile":"","ampzInlineDisplayMobile":"1","ampzInlineDisableExpandOnHover":"","ampzSidebarDisplayMobile":"","ampzFlyInCookieType":"never","ampzFlyInCookieDuration":"5","ampzSideBarVisibility":"inline","ampzMobileVisibility":"inline","ampzSideBarStartClosed":""};
+	</script>
+	<!--[if IE 8]>
+				<link href="/components/com_flexicontent/assets/css/ie8.css?a9b7955754242d1bbcef182ddc51172c" rel="stylesheet" />
+				<![endif]-->
+	<meta property="og:title" content="Universal LC Pedal Controller - Simagic P2000 Control Box" />
+	<meta property="og:description" content=" DIY Load Cell pedals are great, but there is one big problem - the controller! Never fear - Simagic is here! A lot of us already bought the Simagic P2000 Haptic Control Box to drive our Reactors, but essentially it is their P2000 Pedal Controller and has input for three Load Cell based pedals. So ..." />
+	<link rel="image_src" href="https://www.diy-sim.com/images/stories/flexicontent/item_29_field_41/l_p2000_diypedal_1.jpg" />
+	<meta property="og:image" content="https://www.diy-sim.com/images/stories/flexicontent/item_29_field_41/l_p2000_diypedal_1.jpg" />
+
+<link rel="apple-touch-icon-precomposed" href="/templates/yoo_master/apple_touch_icon.png" />
+<link rel="stylesheet" href="/templates/yoo_master/css/base.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/layout.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/menus.css" />
+<style>.wrapper { max-width: 1280px; }
+#sidebar-b { width: 25%; }
+#maininner { width: 75%; }
+#menu .dropdown { width: 250px; }
+#menu .columns2 { width: 500px; }
+#menu .columns3 { width: 750px; }
+#menu .columns4 { width: 1000px; }</style>
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/modules.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/tools.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/system.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/extensions.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/custom.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/color1/navy.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/font2/arial.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/font3/arial.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/style.css" />
+<link rel="stylesheet" href="/templates/yoo_master/styles/diy/css/responsive.css" />
+<link rel="stylesheet" href="/templates/yoo_master/css/print.css" />
+<script src="/templates/yoo_master/warp/js/warp.js"></script>
+<script src="/templates/yoo_master/warp/js/responsive.js"></script>
+<script src="/templates/yoo_master/warp/js/accordionmenu.js"></script>
+<script src="/templates/yoo_master/warp/js/dropdownmenu.js"></script>
+<script src="/templates/yoo_master/js/template.js"></script>
+</head>
+
+<body id="page" class="item-id-29 item-catid-18 type-id-3 type-alias-articles page sidebar-b-right sidebars-1  noblog " data-config='{"twitter":0,"plusone":0,"facebook":0}'>
+
+		
+	<div class="wrapper clearfix">
+
+		<header id="header">
+
+				<nav class="mobile-top">
+
+								<div class="mobile-menu">
+										
+		<input type='checkbox' id='hamburger-input' class='burger-shower'/>
+		<label id='hamburger-menu' for='hamburger-input'> 
+		<i class='fa-solid fa-bars'></i> 
+		<nav id='sidebar-menu'><div class="module accordian  deepest">
+
+			<ul class="menu menu-mobile" id="accordian">
+<li class="level1 item342"><a href="/news" class="level1"><span><i class="fa fa-gr fa-regular fa-newspaper"></i>News</span></a></li><li class="level1 item343 parent"><a href="/sim-projects" class="level1 parent"><span><i class="fa fa-lg fa-regular fa-screwdriver-wrench"></i>Projects</span></a><ul class="nav-child unstyled small level2"><li class="level2 item351"><a href="/sim-projects-mobile/sim-rigs" class="level2"><span><i class="fa fa-regular fa-car"></i>Rigs</span></a></li><li class="level2 item352"><a href="/sim-projects-mobile/wheels" class="level2"><span><i class="fa fa-regular fa-steering-wheel"></i>Wheels</span></a></li><li class="level2 item353"><a href="/sim-projects-mobile/sim-gear" class="level2"><span><i class="fa fa-regular fa-gear"></i>Gear</span></a></li></ul></li><li class="level1 item344 parent"><a href="/guides" class="level1 parent"><span><i class="fa fa-regular fa-radiation"></i>Guides</span></a><ul class="nav-child unstyled small level2"><li class="level2 item442"><a href="/guides/projects" class="level2"><span>Projects</span></a></li><li class="level2 item443"><a href="/guides/reviews" class="level2"><span>Reviews</span></a></li><li class="level2 item354 active current"><a href="/guides/how-to" class="level2 active current"><span>How-tos</span></a></li><li class="level2 item355"><a href="/guides/assembly-guides" class="level2"><span>Assembly Guides</span></a></li></ul></li><li class="level1 item345 parent"><a href="/brands" class="level1 parent"><span><i class="fa fa-lg fa-regular fa-copyright"></i>Brands</span></a><ul class="nav-child unstyled small level2"><li class="level2 item356"><a href="/brands-mobile/affiliates-mobile" class="level2"><span>Affiliates</span></a></li><li class="level2 item357"><a href="/brands-mobile/stores-mobile" class="level2"><span>Stores</span></a></li><li class="level2 item358"><a href="/brands-mobile/sim-rig-brands-mobile" class="level2"><span>Sim Rigs</span></a></li><li class="level2 item359"><a href="/brands-mobile/sim-racing-mobile" class="level2"><span>Sim Racing</span></a></li><li class="level2 item360"><a href="/brands-mobile/sim-flight-mobile" class="level2"><span>Sim Flight</span></a></li><li class="level2 item361"><a href="/brands-mobile/electronic-components-mobile" class="level2"><span>Electronic Components</span></a></li><li class="level2 item362"><a href="/brands-mobile/motion-mobile" class="level2"><span>Motion</span></a></li></ul></li><li class="level1 item346"><a href="/user-gallery" class="level1"><span><i class="fa fa-lg fa-regular fa-images"></i>User Gallery</span></a></li><li class="level1 item347"><a href="/forum" class="level1"><span><i class="fa fa-brands fa-rocketchat"></i>Forum</span></a></li><li class="level1 item350"><a href="/favourite" class="level1"><span><i class="fa fa-gr fa-regular fa-heart-half-stroke"></i>Favourites</span></a></li><li class="level1 item348"><a href="/logout-mobile" class="level1"><span><i class="fa fa-solid fa-arrow-right-from-bracket"></i>Logout</span></a></li></ul>		
+</div>				</div>				
+						
+				
+								<div class="mobile-logo">
+										<div class="module mobile-logo  deepest">
+
+			
+<a title="Home" href="/index.php"><img style="height: 52px;" src="/images/headers/diy-sim_mobile1.png" alt="" border="0" /></a>		
+</div>				</div>				
+							
+				
+								<div class="mobile-logo2">
+										<div class="module mobile-logo2  deepest">
+
+			
+<a title="Home" href="/index.php"><img style="height: 43px;" src="/images/headers/diy-sim_wht.png" alt="" border="0" /></a>		
+</div>				</div>				
+					
+				
+								<div class="mobile-nav">
+										<ul class="menu menu-topmobile">
+<li class="level1 item219 parent"><span class="separator level1 parent"><span><i class="fa fa-gr fa-solid fa-user-plus"></i> Sign Up</span></span>
+<div class="topmobile columns1"><div class="topmobile-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item210"><a href="/cb-login" class="level2"><span>Login</span></a></li><li class="level2 item211"><a href="/cb-registration" class="level2"><span>Register</span></a></li></ul></div></div></div></div></li></ul>
+<ul class="menu menu-topmobile">
+	<li class="level1 parent">
+		<span class="level1 parent">
+			<span><i class="fa  fa-solid fa-magnifying-glass"></i>Mobile Search</span>
+		</span>
+		<div class="topmobile columns1" >
+			<div class="topmobile-bg">
+				<div>
+					<div class="module">
+<form id="searchbox-125" class="searchbox" action="/guides/how-to" method="post" role="search">
+	<input type="text" value="" name="searchword" placeholder="search..." />
+	<button type="reset" value="Reset"></button>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="208" />	
+</form>
+
+<script src="/templates/yoo_master/warp/js/search.js"></script>
+<script>
+jQuery(function($) {
+	$('#searchbox-125 input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;type=json&amp;ordering=&amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+});
+</script></div>
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>
+				</div>	
+								
+					
+				
+					</nav>
+	
+				
+					
+			<div id="headerbar" class="clearfix">
+			
+					
+				<a id="logo" href="https://www.diy-sim.com">
+<img style="height: 56px;" src="/images/headers/diy-sim_wht.png" alt="" border="0" /></a>
+								
+								
+			</div>
+						
+				
+						<div id="toolbar" class="clearfix">
+
+								<div class="float-left">
+				
+									
+					<div class="module   deepest">
+
+			<ul class="menu menu-line">
+<li class="level1 item281"><a href="/news" class="level1"><span>News</span></a></li><li class="level1 item290"><a href="/favourite" class="level1"><span>Favoutires</span></a></li></ul>		
+</div>					
+				</div>
+									
+								<div class="float-right"><div class="module   deepest">
+
+			<ul class="menu menu-top">
+<li class="level1 item219 parent"><span class="separator level1 parent"><span><i class="fa fa-gr fa-solid fa-user-plus"></i> Sign Up</span></span>
+<div class="top columns1"><div class="top-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item210"><a href="/cb-login" class="level2"><span>Login</span></a></li><li class="level2 item211"><a href="/cb-registration" class="level2"><span>Register</span></a></li></ul></div></div></div></div></li></ul>		
+</div>
+<div class="module   deepest">
+
+			
+<form id="searchbox-80" class="searchbox" action="/guides/how-to" method="post" role="search">
+	<input type="text" value="" name="searchword" placeholder="search..." />
+	<button type="reset" value="Reset"></button>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="208" />	
+</form>
+
+<script src="/templates/yoo_master/warp/js/search.js"></script>
+<script>
+jQuery(function($) {
+	$('#searchbox-80 input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;type=json&amp;ordering=&amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+});
+</script>		
+</div></div>
+								
+			</div>
+			
+
+
+						<div id="menubar" class="clearfix">
+				
+								<nav id="menu"><ul class="menu menu-dropdown">
+<li class="level1 item288 parent"><a href="/sim-projects" class="level1 parent"><span><i class="fa fa-lg fa-regular fa-screwdriver-wrench"></i>Projects</span></a><div class="dropdown columns1"><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item162 parent"><a href="/sim-projects/sim-rigs" class="level2 parent"><span><i class="fa fa-regular fa-car"></i>Rigs</span></a><ul class="nav-child unstyled small level3"><li class="level3 item203"><a href="/sim-projects/sim-rigs/complete-rigs" class="level3"><span>Complete Rigs</span></a></li><li class="level3 item205"><a href="/sim-projects/sim-rigs/tactile" class="level3"><span>Tactile</span></a></li><li class="level3 item204"><a href="/sim-projects/sim-rigs/motion" class="level3"><span>Motion</span></a></li><li class="level3 item321"><a href="/sim-projects/sim-rigs/wheel-mounts" class="level3"><span>Wheel Mounts</span></a></li><li class="level3 item322"><a href="/sim-projects/sim-rigs/monitor-mounts" class="level3"><span>Monitor Mounts</span></a></li><li class="level3 item323"><a href="/sim-projects/sim-rigs/seat-mounts" class="level3"><span>Seat Mounts</span></a></li><li class="level3 item324"><a href="/sim-projects/sim-rigs/pedal-mounts" class="level3"><span>Pedal Mounts</span></a></li><li class="level3 item325"><a href="/sim-projects/sim-rigs/rig-accessories" class="level3"><span>Rig Accessories</span></a></li></ul></li><li class="level2 item199 parent"><a href="/sim-projects/wheels" class="level2 parent"><span><i class="fa fa-regular fa-steering-wheel"></i>Wheels</span></a><ul class="nav-child unstyled small level3"><li class="level3 item207"><a href="/sim-projects/wheels/complete-wheels" class="level3"><span>Complete Wheels</span></a></li><li class="level3 item206"><a href="/sim-projects/wheels/button-plates" class="level3"><span>Button Plates</span></a></li><li class="level3 item524"><a href="/sim-projects/wheels/wheel-accessories" class="level3"><span>Wheel Accessories</span></a></li></ul></li><li class="level2 item212 parent"><a href="/sim-projects/sim-gear" class="level2 parent"><span><i class="fa fa-regular fa-gear"></i>Gear</span></a><ul class="nav-child unstyled small level3"><li class="level3 item380"><a href="/sim-projects/sim-gear/pedals" class="level3"><span>Pedals</span></a></li><li class="level3 item200"><a href="/sim-projects/sim-gear/shifters" class="level3"><span>Shifters</span></a></li><li class="level3 item201"><a href="/sim-projects/sim-gear/button-boxes" class="level3"><span>Button Boxes</span></a></li><li class="level3 item202"><a href="/sim-projects/sim-gear/displays" class="level3"><span>Displays</span></a></li><li class="level3 item326"><a href="/sim-projects/sim-gear/handbrakes" class="level3"><span>Handbrakes</span></a></li><li class="level3 item327"><a href="/sim-projects/sim-gear/flight-controls" class="level3"><span>Flight Controls</span></a></li><li class="level3 item328"><a href="/sim-projects/sim-gear/other-sim-gear" class="level3"><span>Other Sim Gear</span></a></li></ul></li></ul></div></div></div></div></li><li class="level1 item213 parent active"><a href="/guides" class="level1 parent active"><span><i class="fa fa-regular fa-radiation"></i>Guides</span></a><div class="dropdown columns1"><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item416"><a href="/guides/projects" class="level2"><span>Projects</span></a></li><li class="level2 item417"><a href="/guides/reviews" class="level2"><span>Reviews</span></a></li><li class="level2 item208 active current"><a href="/guides/how-to" class="level2 active current"><span>How-tos</span></a></li><li class="level2 item214"><a href="/guides/assembly-guides" class="level2"><span>Assembly Guides</span></a></li></ul></div></div></div></div></li><li class="level1 item268 parent"><a href="/brands" class="level1 parent"><span><i class="fa fa-lg fa-regular fa-copyright"></i>Brands</span></a><div class="dropdown columns1"><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item285"><a href="/brands/affiliates" class="level2"><span>Affiliates</span></a></li><li class="level2 item284"><a href="/brands/stores" class="level2"><span>Stores</span></a></li><li class="level2 item271"><a href="/brands/sim-rig-brands" class="level2"><span>Sim Rigs</span></a></li><li class="level2 item269"><a href="/brands/sim-racing" class="level2"><span>Sim Racing</span></a></li><li class="level2 item270"><a href="/brands/sim-flight" class="level2"><span>Sim Flight</span></a></li><li class="level2 item272"><a href="/brands/electronic-components" class="level2"><span>Electronic Components</span></a></li><li class="level2 item273"><a href="/brands/motion" class="level2"><span>Motion</span></a></li></ul></div></div></div></div></li><li class="level1 item289 parent"><a href="/user-gallery" class="level1 parent"><span><i class="fa fa-lg fa-regular fa-images"></i>User Gallery</span></a><div class="dropdown columns1"><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item339"><a href="/user-gallery/steering-wheels-gallery" class="level2"><span>Steering Wheels</span></a></li><li class="level2 item340"><a href="/user-gallery/sim-rigs-gallery" class="level2"><span>Sim Rigs</span></a></li><li class="level2 item341"><a href="/user-gallery/sim-gear-gallery" class="level2"><span>Sim Gear</span></a></li></ul></div></div></div></div></li><li class="level1 item197 parent"><a href="/forum" class="level1 parent"><span><i class="fa fa-brands fa-rocketchat"></i>Forum</span></a><div class="dropdown columns1"><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2"><li class="level2 item231"><a href="/forum/forum-user-profile" class="level2"><span>User Profile</span></a></li><li class="level2 item232"><a href="/forum/forum-my-topics" class="level2"><span>My Topics</span></a></li></ul></div></div></div></div></li></ul></nav>
+				
+								
+			</div>
+					
+					
+		</header>
+
+				
+				
+				<div id="main" class="grid-block">
+
+			<div id="maininner" class="grid-box">
+
+				
+								<section id="breadcrumbs"><div class="breadcrumbs"><a href="/">Home</a><a href="/guides">Guides</a><a href="/guides/how-to">How-tos</a><strong>Universal LC Pedal Controller - Simagic P2000 Control Box</strong></div></section>
+				
+								<section id="content" class="grid-block"><div id="system-message-container">
+	</div>
+
+<div id="flexicontent" class="flexicontent fc-item-block news fcitems fcitem29 fctype3 fcmaincat18 menuitem208 " itemscope itemtype="http://schema.org/Article">
+	
+		
+  	
+		
+				
+				
+		
+		
+	
+		<!-- BOF Custom Top Block -->      
+      
+    <div class="top_block uk-grid-small" uk-grid>
+    <div class="top_block_content uk-width-expand@s">  
+		
+	
+			<!-- BOF item title -->
+		<h2 class="contentheading">
+			<span class="fc_item_title" itemprop="name">
+			Universal LC Pedal Controller - Simagic P2000 Control Box			</span>
+		</h2>
+		<!-- EOF item title -->
+		
+	
+  
+
+			<!-- BOF slideshow_top block -->
+		<div class="flexi lineinfo slideshow_top ">
+						<div class="flexi element field_subtitle">
+								<div class="field_subtitle"><h4 class="uk-margin-small-top uk-margin-small-bottom uk-margin-small-left">P2000 DIY Pedals</h4></div>
+			</div>
+					</div>
+		<!-- EOF slideshow_top block -->
+	
+
+			<!-- BOF subtitle1 block -->
+		<div class="flexi subtitle1 ">
+						<div class="flexi element field_created">
+								<span class="flexi label field_created"><i class="fa fa-lg fa-regular fa-calendars"></i></span>
+								<div class="flexi value field_created">06 November 2025
+		<meta itemprop="dateCreated" content="2025-11-06 12:11:11">
+	</div>
+			</div>
+						<div class="flexi element field_created_by">
+								<span class="flexi label field_created_by"><i class="fa fa-lg fa-regular fa-user"></i></span>
+								<div class="flexi value field_created_by">StuyoADM</div>
+			</div>
+						<div class="flexi element field_categories">
+								<span class="flexi label field_categories"><i class="fa fa-lg fa-regular fa-tag"></i></span>
+								<div class="flexi value field_categories"><a class="fc_categories fc_category_18 fc_ismain_cat link_categories" href="/guides/how-to">How-tos</a></div>
+			</div>
+						<div class="flexi element field_hits">
+								<span class="flexi label field_hits"><i class="fa fa-lg fa-regular fa-eye"></i></span>
+								<div class="flexi value field_hits">4848 views</div>
+			</div>
+					</div>
+		<!-- EOF subtitle1 block -->
+		
+	
+			<!-- BOF subtitle2 block -->
+		<div class="AMPZ subtitle2AMPZ ">
+						<div class="DIY AMPZ uk-float-left field_ampz-share">
+								<div class="DIY AMPZ field_ampz-share"><p><!-- start ampz shortcode Article --><div id="ampz_inline_sc_3" style= "font-family: 'Open Sans', helvetica, arial, sans-serif" class="animated fadeIn " data-combineafter="6" data-buttontemplate="template_eindhoven" data-buttonsize="ampz_btn_small" data-buttonwidth="autototal">  <div class="ampz_container"><div class="ampz_total_shares ampz_btn_small" style="color: #333333;"><span class="ampz_total_shares_count">0</span><div class="ampz_total_shares_label">Shares</div></div><ul>
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_facebook ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="facebook" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box"  href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-facebook"></i>
+    					  <span class="ampz_network_label">Share</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_twitter ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="twitter" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box"  href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-twitter"></i>
+    					  <span class="ampz_network_label">Tweet</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_whatsapp ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="whatsapp" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box"  href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-whatsapp"></i>
+    					  <span class="ampz_network_label">Share</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_reddit ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="reddit" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box"  href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-reddit"></i>
+    					  <span class="ampz_network_label">Share</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_copy ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="copy" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box"  data-copytitle="Link copied to clipboard!" href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-copy"></i>
+    					  <span class="ampz_network_label">Copy Link</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+    						<li class="">
+    							<a data-sharefollow="share" class="template_eindhoven ampz_btn ampz_btn_small ampz_love ampz_colorbg ampz_overlay" data-url="https%3A%2F%2Fwww.diy-sim.com%2Fguides%2Fhow-to%2Fitem%2Funiversal-lc-pedal-controller-simagic-p2000-control-box" data-basecount="0" data-shareposition="shortcode"  data-sharetype="love" data-text="How-tos+-+Universal+LC+Pedal+Controller+-+Simagic+P2000+Control+Box" data-lovetitle="Thanks for your Love!" href="#">
+    								<i class="ampz ampz-icoon ampz-icoon-love"></i>
+    					  <span class="ampz_network_label">Love</span><span class="ampz_count"></span><span class="ampz_icon_overlay"></span></a>
+    					
+	                    </ul>
+					</div>
+				</div><!-- end ampz Article --></p></div>
+			</div>
+					</div>
+		<!-- EOF subtitle2 block -->
+		
+	
+		</div>
+    <div class="top_block_teaser_image uk-width-1-3@s">
+      							<!-- BOF image block -->
+								<div class="teaser uk-padding-remove uk-margin-remove field_teaser-image">
+					<div class="image-teaser uk-margin-remove uk-padding-remove">
+		<div id="fb_gallery_fc_teaser_image_fcitem29">
+			<ul>
+				<a style="" href="/images/stories/flexicontent/item_29_field_41/l_p2000_diypedal_1.jpg"  class="fc_image_thumb fb_gallery" data-fancybox="fcview_item_fcitem_29" data-title="&lt;b&gt;&lt;/b&gt;&lt;br&gt; P2000 Haptic Controller box for DIY Pedals" data-caption="&lt;b&gt;&lt;/b&gt;&lt;br&gt; P2000 Haptic Controller box for DIY Pedals">
+			<img src="/images/stories/flexicontent/item_29_field_41/m_p2000_diypedal_1.jpg" alt="Universal LC Pedal Controller - Simagic P2000 Control Box Image 1" title="P2000 Haptic Controller box for DIY Pedals" class="fc_field_image hasTooltip" itemprop="image" srcset="https://www.diy-sim.com/images/stories/flexicontent/item_29_field_41/m_p2000_diypedal_1.jpg 600w, https://www.diy-sim.com/images/stories/flexicontent/item_29_field_41/s_p2000_diypedal_1.jpg 120w" sizes="(min-width: 600px) 600px, (min-width: 120px) 120px" width="600" height="340" style="height: auto; max-width: 100%;"  loading="lazy" decoding="async" />
+			
+		</a>
+			</ul>
+		</div>
+	</div>					<div class="fcclear"></div>
+				</div>
+								<!-- EOF image block -->
+			    </div>
+    </div>
+              
+		<!-- EOF Custom Top Block -->  	
+	
+	<div class="fcclear"></div>
+	
+		
+		
+	
+	<div class="fcclear"></div>
+	
+	
+			<!-- BOF image/top row -->
+		<div class="flexi topblock ">  <!-- NOTE: image block is inside top block ... -->
+			
+
+			
+						
+		</div>
+		<!-- EOF image/top row -->
+		
+	
+	<div class="fcclear"></div>
+	
+	
+			<!-- BOF description -->
+		<div class="description ">
+										<div class="desc-content field_text"><p>DIY Load Cell pedals are great, but there is one big problem - the controller! Never fear - Simagic is here!</p>
+<p>A lot of us already bought the Simagic P2000 Haptic Control Box to drive our Reactors, but essentially it is their P2000 Pedal Controller and has input for three Load Cell based pedals. So now, that we already have it, why not connect our Load Cell Pedals to it? This way we will save USBs ports, cables, remove clutter and have less control devices connected. In theory this will work with any Load Cell pedal as LCs are standard component and are supposed to use same color coding, but always they could be discrepancies so make sure you first check if your components are compatible! Again, in theory this would work with other Pedal Control boxes, but we are interested in this particular one because it will drive both pedals and haptic reactors, also is relatively cheap.</p>
+<h3><strong>Features</strong></h3>
+<p>1. Dedicated professional grade pedal controller</p>
+<p>2. Relatively cheap</p>
+<p>3. Should work with any standard Load Cell</p>
+<p>4. Drives both pedals and haptic reactors</p>
+<p>5. Works natively in Simagic Control Center</p>
+<p>6. Works natively in SimHub</p>
+<p>7. Works natively like Simagic device connected to their Wheelbase</p>
+<p>8. Less cables, less devices connected in Windows</p>
+<p>9. Did I mention relatively cheap?</p>
+<p></p>
+<p><div class="uk-card uk-card-body uk-card-small uk-card-default"><strong>Credits</strong></p>
+<p><span>A user on Reddit did the heavy lifting and figured the 4 cell pinout, so I did not have to do it myself. Original post is here: <a href="https://www.reddit.com/r/Simagic/comments/1efrbpk/comment/lgkuwgt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button" target="_blank" rel="noopener noreferrer" title="Custom Pedals for Simagic Base">Custom Pedals for Simagic Base</a></span></p>
+<p></div></p>
+<p><div class="uk-card uk-card-body uk-card-small uk-card-secondary"><strong>Disclaimer</strong></p>
+<p>It is simple project and in theory as long as you follow the color coding, you should be fine. But on the other hand, <span>you can always burn you controller, load cell or both! We are not accountable for that, mind what you are doing!</span></p>
+<p></div></p>
+<h3><strong>Parts Needed:</strong></h3>
+<p>1. <a href="https://simagic.com/products/p2000-haptic-control-box" target="_blank" rel="noopener noreferrer">P2000 Haptic Control Box</a></p>
+<p>2.<a href="https://a.aliexpress.com/_EIrhxFi" target="_blank" rel="noopener noreferrer" title=" PHB2.0 PHB 2.0mm"> JST<span> PHB2.0 PHB 2.0mm 2x6pin connector + lead</span></a></p>
+<p>Bonus:</p>
+<p>1. <a href="https://a.aliexpress.com/_EyQCeN2" target="_blank" rel="noopener noreferrer">RJ11 Female jack connector with leads 4pin, 6pin (if it fits your original pedals)</a></p>
+<h3><strong>Pinout:</strong></h3>
+<p><strong>N.B.- I have removed the cables from JST connector and rearranged them accordingly to the P2000 pinout to get matching colors. Your connectors will most probably come with different wire arrangement!</strong></p>
+<p>Pictures should be self explanatory, pinout feature standard Load cell color coding:</p>
+<p><span><div class="uk-flex uk-flex-center" uk-lightbox="animation: slide"><div><a class="uk-inline"   href="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_4pin.jpg"><img src="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_4pin.jpg" alt="images/articles/how-to/p2000_diy/P2000PedalBoxPinout_4pin.jpg"></a></div></div></span></p>
+<p><span>And what about 5 wired Load Cells? I got you covered - the shield wire should be connected to GND (this pin is connected to the 24V input GND as well):</span></p>
+<p><span><div class="uk-flex uk-flex-center" uk-lightbox="animation: slide"><div><a class="uk-inline"   href="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_5pin.jpg"><img src="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout_5pin.jpg" alt="images/articles/how-to/p2000_diy/P2000PedalBoxPinout_5pin.jpg"></a></div></div></span></p>
+<p>Just to make sure, here is another perspective:</p>
+<p><span><div class="uk-flex uk-flex-center" uk-lightbox="animation: slide"><div><a class="uk-inline"   href="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout.jpg"><img src="/images/articles/how-to/p2000_diy/P2000PedalBoxPinout.jpg" alt="images/articles/how-to/p2000_diy/P2000PedalBoxPinout.jpg"></a></div></div></span></p>
+<p><span>Some more rotations for the 5 wire setup:</span></p>
+<p><span><div class="uk-child-width-1-2@s uk-grid-small"  uk-grid uk-lightbox="animation: slide"><div class="uk-flex uk-flex-center"><a class="uk-inline " href="/images/articles/how-to/p2000_diy/P2000_Pinout2.jpg"><img src="/images/articles/how-to/p2000_diy/P2000_Pinout2.jpg" alt="images/articles/how-to/p2000_diy/P2000_Pinout2.jpg"></a></div> <div class="uk-flex uk-flex-center"><a class="uk-inline " href="/images/articles/how-to/p2000_diy/P2000_Pinout3.jpg"><img src="/images/articles/how-to/p2000_diy/P2000_Pinout3.jpg" alt="images/articles/how-to/p2000_diy/P2000_Pinout3.jpg"></a></div></div></span></p>
+<p><span>3D model to escape any confusion:</span></p>
+<p><span><iframe width="725" height="453" src="https://www.tinkercad.com/embed/2jq4iLdzU3v?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></span></p>
+<h3><strong>Example - My DIY Pedals V2 connected to the Simagic P2000 Box</strong></h3>
+<p><span><div class="uk-child-width-1-3@s uk-grid-small uk-flex-center uk-text-center"  uk-grid uk-lightbox="animation: slide"><div class="uk-flex uk-flex-center"><a class="uk-inline " href="/images/articles/how-to/p2000_diy/IMG_0471.jpg"><img src="/images/articles/how-to/p2000_diy/IMG_0471.jpg" alt="images/articles/how-to/p2000_diy/IMG_0471.jpg"></a></div> <div class="uk-flex uk-flex-center"><a class="uk-inline " href="/images/articles/how-to/p2000_diy/IMG_0464.jpg"><img src="/images/articles/how-to/p2000_diy/IMG_0464.jpg" alt="images/articles/how-to/p2000_diy/IMG_0464.jpg"></a></div><div class="uk-flex uk-flex-center"><a class="uk-inline " href="/images/articles/how-to/p2000_diy/IMG_0466.jpg"><img src="/images/articles/how-to/p2000_diy/IMG_0466.jpg" alt="images/articles/how-to/p2000_diy/IMG_0466.jpg"></a></div></div></span></p>
+<h3><strong>Conclusion and Future </strong></h3>
+<p><span mce-data-marked="1">My DIY pedals are working great with the P2000 control box. I made sure to use properly sized Load Cells to get good resolution from them with the mechanical construction of the pedals. Throttle and Clutch sense maximum little over their midpoint, so they are pretty sensitive and precise. The brake has 120KG LC, which is a little overkill, but still works like a charm.</span></p>
+<p><span mce-data-marked="1">The P2000 Brake Pedal uses Load Cell + Hall Sensor. I intend to connect a Hall sensor on my brake and see if it will perform better and how exactly it will work. Presumption is that the only empty pin left is the Hall Sensor Signal.</span></p>
+<p><span mce-data-marked="1">I will be redoing my other pedals, which have RJ11 4pin jack, to work natively with the P2000 box to investigate how the Simgrade VX-Pro will behave with this controller.</span></p> </div>
+					</div>
+		<!-- EOF description -->
+		
+	
+	<div class="fcclear"></div>
+	
+	
+		
+	
+	<div class="fcclear"></div>
+	
+	
+		
+		
+	
+	<div class="fcclear"></div>
+	
+	
+		
+	
+		
+	
+	
+	
+			<!-- BOF afterDisplayContent -->
+		<div class="fc_afterDisplayContent ">
+			<script type="text/javascript">
+<!--
+var jcomments=new JComments(29, 'com_content','/component/jcomments/');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"></div>
+<div id="comments-form-link">
+<a id="addcomments" class="showform" href="#addcomments" onclick="jcomments.showForm(29,'com_content', 'comments-form-link'); return false;">Add comment</a>
+</div>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+<script type="text/javascript">
+<!--
+jcomments.setAntiCache(0,0,1);
+//-->
+</script> 
+</div>		</div>
+		<!-- EOF afterDisplayContent -->
+		
+
+	
+		
+			<!-- BOF comments -->
+		<div class="comments ">
+				</div>
+		<!-- BOF comments -->
+	
+</div></section>
+				
+								<section id="innerbottom" class="grid-block"><div class="grid-box width100 grid-h"><div class="module mod-box  deepest">
+
+		<h3 class="module-title">License</h3>	
+<div class="uk-grid-small" uk-grid><i class="fa-brands fa-2x fa-creative-commons"></i><i class="fa-brands fa-2x fa-creative-commons-by"></i><i class="fa-brands fa-2x fa-creative-commons-nc"></i> </div>
+<div class="uk-text-emphasis uk-margin-small-top">Unless otherwise stated this work is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License </a>.</div>
+		
+</div></div></section>
+				
+			</div>
+			<!-- maininner end -->
+			
+						
+						<aside id="sidebar-b" class="grid-box"><div class="grid-box width100 grid-v"><div class="module mod-box  deepest">
+
+		<h3 class="module-title"><span class="color">New</span> Projects</h3>	
+
+<div uk-slideshow="animation: push; autoplay: true"">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slideshow-items">
+		 <li>
+<div class="layout-default ">
+
+		<div class="uk-inline item-image uk-margin-remove uk-height-medium uk-overflow-hidden"> 
+ 
+
+
+	<div class="uk-visible@l uk-visible-large"><a href="/sim-projects/sim-gear/item/aoostar-gem-12-ag01-open-air-frame" title="Aoostar Gem 12 + AG01 Open Air Frame">
+		<img src="https://www.diy-sim.com/media/zoo/images/60FCA783-B4A1-4C79-843E-2CEA656B590F_bbc21ebf1776ff53bcfaa659b035d17e.png" alt="Aoostar Gem 12 + AG01 Open Air Frame - 60FCA783-B4A1-4C79-843E-2CEA656B590F_bbc21ebf1776ff53bcfaa659b035d17e"    />
+		</a>
+	</div>
+
+	<div class="uk-hidden@l uk-hidden-large"><a href="/sim-projects/sim-gear/item/aoostar-gem-12-ag01-open-air-frame" title="Aoostar Gem 12 + AG01 Open Air Frame">
+		<img src="https://www.diy-sim.com/media/zoo/images/60FCA783-B4A1-4C79-843E-2CEA656B590F_bbc21ebf1776ff53bcfaa659b035d17e.png" alt="Aoostar Gem 12 + AG01 Open Air Frame - 60FCA783-B4A1-4C79-843E-2CEA656B590F_bbc21ebf1776ff53bcfaa659b035d17e"    />
+		</a>
+	</div>
+
+  			<div class="uk-overlay-primary uk-position-bottom uk-padding-small"><span class="uk-text-default"> <a title="Aoostar Gem 12 + AG01 Open Air Frame" href="/sim-projects/sim-gear/item/aoostar-gem-12-ag01-open-air-frame">Aoostar Gem 12 + AG01 Open Air Frame</a> </span></div>
+		
+	</div>
+		
+
+		
+		
+		
+		
+	
+</div></li>
+		 <li>
+<div class="layout-default ">
+
+		<div class="uk-inline item-image uk-margin-remove uk-height-medium uk-overflow-hidden"> 
+ 
+
+
+	<div class="uk-visible@l uk-visible-large"><a href="/sim-projects/sim-gear/item/57-diy-pro-pedals-mk-ii" title="57 DIY Pro Pedals MK-II">
+		<img src="https://www.diy-sim.com/media/zoo/images/57PedMK2_00_b249b9304a8011c9a99403ed021b64f9.png" alt="57 DIY Pro Pedals MK-II - 57PedMK2_00_b249b9304a8011c9a99403ed021b64f9"    />
+		</a>
+	</div>
+
+	<div class="uk-hidden@l uk-hidden-large"><a href="/sim-projects/sim-gear/item/57-diy-pro-pedals-mk-ii" title="57 DIY Pro Pedals MK-II">
+		<img src="https://www.diy-sim.com/media/zoo/images/57PedMK2_00_b249b9304a8011c9a99403ed021b64f9.png" alt="57 DIY Pro Pedals MK-II - 57PedMK2_00_b249b9304a8011c9a99403ed021b64f9"    />
+		</a>
+	</div>
+
+  			<div class="uk-overlay-primary uk-position-bottom uk-padding-small"><span class="uk-text-default"> <a title="57 DIY Pro Pedals MK-II" href="/sim-projects/sim-gear/item/57-diy-pro-pedals-mk-ii">57 DIY Pro Pedals MK-II</a> </span></div>
+		
+	</div>
+		
+
+		
+		
+		
+		
+	
+</div></li>
+		 <li>
+<div class="layout-default ">
+
+		<div class="uk-inline item-image uk-margin-remove uk-height-medium uk-overflow-hidden"> 
+ 
+
+
+	<div class="uk-visible@l uk-visible-large"><a href="/sim-projects/sim-gear/item/57-pedal-plates" title="57 Pedal Plates">
+		<img src="https://www.diy-sim.com/media/zoo/images/IMG_0365_55d358a957947993fcd62f11bafc79ae.jpeg" alt="57 Pedal Plates - IMG_0365_55d358a957947993fcd62f11bafc79ae"    />
+		</a>
+	</div>
+
+	<div class="uk-hidden@l uk-hidden-large"><a href="/sim-projects/sim-gear/item/57-pedal-plates" title="57 Pedal Plates">
+		<img src="https://www.diy-sim.com/media/zoo/images/IMG_0365_55d358a957947993fcd62f11bafc79ae.jpeg" alt="57 Pedal Plates - IMG_0365_55d358a957947993fcd62f11bafc79ae"    />
+		</a>
+	</div>
+
+  			<div class="uk-overlay-primary uk-position-bottom uk-padding-small"><span class="uk-text-default"> <a title="57 Pedal Plates" href="/sim-projects/sim-gear/item/57-pedal-plates">57 Pedal Plates</a> </span></div>
+		
+	</div>
+		
+
+		
+		
+		
+		
+	
+</div></li>
+		 <li>
+<div class="layout-default ">
+
+		<div class="uk-inline item-image uk-margin-remove uk-height-medium uk-overflow-hidden"> 
+ 
+
+
+	<div class="uk-visible@l uk-visible-large"><a href="/sim-projects/sim-gear/item/57hb-mk-ii-pro-sim-handbrake" title="57HB MK-II Pro Sim Handbrake">
+		<img src="https://www.diy-sim.com/media/zoo/images/IMG_4633_514b04be68c4b90338987ed76a28a313.jpeg" alt="57HB MK-II Pro Sim Handbrake - IMG_4633_514b04be68c4b90338987ed76a28a313"    />
+		</a>
+	</div>
+
+	<div class="uk-hidden@l uk-hidden-large"><a href="/sim-projects/sim-gear/item/57hb-mk-ii-pro-sim-handbrake" title="57HB MK-II Pro Sim Handbrake">
+		<img src="https://www.diy-sim.com/media/zoo/images/IMG_4633_514b04be68c4b90338987ed76a28a313.jpeg" alt="57HB MK-II Pro Sim Handbrake - IMG_4633_514b04be68c4b90338987ed76a28a313"    />
+		</a>
+	</div>
+
+  			<div class="uk-overlay-primary uk-position-bottom uk-padding-small"><span class="uk-text-default"> <a title="57HB MK-II Pro Sim Handbrake" href="/sim-projects/sim-gear/item/57hb-mk-ii-pro-sim-handbrake">57HB MK-II Pro Sim Handbrake</a> </span></div>
+		
+	</div>
+		
+
+		
+		
+		
+		
+	
+</div></li>
+		 <li>
+<div class="layout-default ">
+
+		<div class="uk-inline item-image uk-margin-remove uk-height-medium uk-overflow-hidden"> 
+ 
+
+
+	<div class="uk-visible@l uk-visible-large"><a href="/sim-projects/sim-gear/item/57seq-mk-i-pro-sequential-shifter" title="57SEQ MK-I PRO — Sequential Shifter">
+		<img src="https://www.diy-sim.com/media/zoo/images/57Seq1Pro_0_c2cc66bf1b38f4353ffc4a3b0a921b0e.png" alt="57SEQ MK-I PRO — Sequential Shifter - 57Seq1Pro_0_c2cc66bf1b38f4353ffc4a3b0a921b0e"    />
+		</a>
+	</div>
+
+	<div class="uk-hidden@l uk-hidden-large"><a href="/sim-projects/sim-gear/item/57seq-mk-i-pro-sequential-shifter" title="57SEQ MK-I PRO — Sequential Shifter">
+		<img src="https://www.diy-sim.com/media/zoo/images/57Seq1Pro_0_c2cc66bf1b38f4353ffc4a3b0a921b0e.png" alt="57SEQ MK-I PRO — Sequential Shifter - 57Seq1Pro_0_c2cc66bf1b38f4353ffc4a3b0a921b0e"    />
+		</a>
+	</div>
+
+  			<div class="uk-overlay-primary uk-position-bottom uk-padding-small"><span class="uk-text-default"> <a title="57SEQ MK-I PRO — Sequential Shifter" href="/sim-projects/sim-gear/item/57seq-mk-i-pro-sequential-shifter">57SEQ MK-I PRO — Sequential Shifter</a> </span></div>
+		
+	</div>
+		
+
+		
+		
+		
+		
+	
+</div></li>
+		</ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+	</div>
+	 <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin-remove uk-padding-small"></ul>
+</div>
+
+		
+</div></div><div class="grid-box width100 grid-v"><div class="module mod-box  deepest">
+
+		<h3 class="module-title">Affiliates</h3>	
+
+<div uk-slideshow="animation: push; autoplay: true"">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slideshow-items">
+		 <li>
+<div class="layout-layout2 ">
+
+		<div class="media media-left"> <a href="/brands-mobile/affiliates-mobile/item/dynamic-x"  title="Dynamic X"><div class="item-image uk-margin-remove uk-align-center"><img style="width: 100%;" src="https://www.diy-sim.com/media/zoo/images/DynamicX_d67d6a1077e430950dd9b1cfbfcc08de.png" /></div></a> </div>
+		
+		
+		
+		
+		
+		
+	
+</div></li>
+		</ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+	</div>
+	 <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin-remove uk-padding-small"></ul>
+</div>
+
+		
+</div></div><div class="grid-box width100 grid-v"><div class="module mod-box  deepest">
+
+			
+<p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4792549068967747"
+     crossorigin="anonymous"></script>
+<!-- DIY-SIM Ad Vertical -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4792549068967747"
+     data-ad-slot="6533946773"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>		
+</div></div></aside>
+			
+		</div>
+				<!-- main end -->
+
+				
+				<section id="bottom-b" class="grid-block"><div class="grid-box width100 grid-h"><div class="module mod-box  deepest">
+
+			
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4792549068967747"
+     crossorigin="anonymous"></script>
+<!-- DIY-SIM Ad Horizontal -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4792549068967747"
+     data-ad-slot="2546314899"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>		
+</div></div></section>
+				
+				<hr class="uk-divider-icon" />
+		<footer id="footer" class="uk-article-divider">
+						<a id="totop-scroller" href="#page"></a>
+			
+			<div class="module   deepest">
+
+			
+<p><img style="height: 40px;" src="/images/headers/diy-sim_wht.png" alt="" border="0" /></p>		
+</div>
+<div class="module   deepest">
+
+			<div class="container">
+ <div class="effect aeneas">
+    <div class="buttons">     
+	  <a href="https://www.patreon.com/cw/DIY_SIM" class="pat" title="Join us on Patreon" target="_blank"><i class="fa fa-brands fa-patreon" aria-hidden="true"></i></a>  
+      <a href="https://www.facebook.com/diysimofficial" class="fb" title="Join us on Facebook" target="_blank"><i class="fa fa-brands fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/@57uyo" class="yt" title="Join us on YouTube" target="_blank"><i class="fa fa-brands fa-youtube" aria-hidden="true"></i></a>	  
+      <a href="https://discord.gg/QdYvDTufVz" class="discord" title="Join us on Discord" target="_blank"><i class="fa fa-brands fa-discord" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/diysimofficial/" class="insta" title="Join us on Instagram" target="_blank"><i class="fa fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="mailto:info@diy-sim.com" class="vimeo" title="Send us a Mail" target="_blank"><i class="fa fa-regular fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>		
+</div>Powered by <a href="http://www.yootheme.com">Warp Theme Framework</a>
+		</footer>
+		
+	</div>
+	
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YECBLZJ05B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YECBLZJ05B');
+</script>	
+</body>
+</html>
